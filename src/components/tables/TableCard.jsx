@@ -1,9 +1,16 @@
 "use client";
+import { useNavigate } from "react-router-dom";
 import { getRandomColor } from "../../utils/index.js";
 
 const TableCard = ({ table: { id, status, name, initial,seats } }) => {
+  const navigate = useNavigate();
+  const handleClick = (params) => {
+    if(status != "Booked"){
+      navigate(`/menu`)
+    }
+  }
   return (
-    <div className="">
+    <div className="" onClick={handleClick}>
       <div className="bg-gray-700 px-3 py-3 rounded">
         <div className="flex  justify-between items-center">
           <h1 className="text-white text-xs">{name}</h1>

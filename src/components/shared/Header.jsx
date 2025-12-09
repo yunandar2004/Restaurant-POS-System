@@ -1,5 +1,5 @@
 import React from "react";
-import { BiSearch } from "react-icons/bi";
+import { BiBell, BiSearch, BiUserCircle } from "react-icons/bi";
 import { FaSearch } from "react-icons/fa";
 
 const Header = () => {
@@ -23,10 +23,12 @@ const Header = () => {
         </div>
         <div className="flex gap-4 justify-center items-center">
           <div className="cursor-pointer">
-            <img src="/bell.png" alt="bell" className="lg:size-9 md:size-7 font-bold" />
+            {/* <img src="/bell.png" alt="bell" className="lg:size-9 md:size-7 font-bold" /> */}
+            <BiBell className="lg:size-9 md:size-7" />
           </div>
           <div className="flex justify-center items-center gap-2">
-            <img src="/user.png" alt="user" className="lg:size-9 md:size-7"/>
+            {/* <img src="/user.png" alt="user" className="lg:size-9 md:size-7"/> */}
+            <BiUserCircle className="lg:size-9 md:size-7" />
             <div className="">
               <p className="lg:text-md md:text-xs font-bold">User Name</p>
               <p className="text-xs">Admin</p>
