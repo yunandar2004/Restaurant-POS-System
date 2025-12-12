@@ -11,6 +11,9 @@ export default defineConfig({
       },
     }),
     tailwindcss(),
-    // require('tailwindcss-scrollbar-hide')
   ],
+  optimizeDeps: {
+    include: ["react", "react-dom", "react-redux", "@reduxjs/toolkit", "redux"],
+    exclude: ["some-big-dependency"], // Exclude if causing issues
+  },
 });

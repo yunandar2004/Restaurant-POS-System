@@ -20,39 +20,39 @@ const FooterNav = () => {
     if (count > 1) setCount(count - 1);
   };
   return (
-    <footer className=" fixed bottom-0 left-0 right-0 bg-gray-800 h-12">
+    <footer className=" fixed bottom-0 left-0 right-0 bg-gray-800 h-10">
       <div className="flex justify-around items-center py-1">
         <button
           onClick={() => navigate("/")}
           className="flex justify-center items-center text-green-600 hover:bg-gray-600 hover:rounded-md hover:py-2 hover:px-3 py-2 px-3 "
         >
-          <FaHome className="inline mr-2  lg:size-7 md:size-5" /> Home
+          <FaHome className="inline mr-2  lg:size-5 md:size-4" /> Home
         </button>
         <button
           onClick={() => navigate("/orders")}
           className="flex justify-center items-center text-green-600 hover:bg-gray-600 hover:rounded-md hover:py-2 hover:px-3 py-2 px-3 "
         >
-          <MdOutlineRecordVoiceOver className="inline mr-2  lg:size-7 md:size-5" />{" "}
+          <MdOutlineRecordVoiceOver className="inline mr-2  lg:size-5 md:size-4" />{" "}
           Orders
         </button>
         <button
           onClick={() => navigate("/tables")}
           className="flex justify-center items-center text-green-600 hover:bg-gray-600 hover:rounded-md hover:py-2 hover:px-3 py-2 px-3 "
         >
-          <MdTableBar className="inline mr-2  lg:size-7 md:size-5" /> Tables
+          <MdTableBar className="inline mr-2  lg:size-5 md:size-4" /> Tables
         </button>
         <button
           onClick={() => navigate("/more")}
           className="flex justify-center items-center text-green-600 hover:bg-gray-600 hover:rounded-md hover:py-2 hover:px-3 py-2 px-3 "
         >
-          <CiCircleMore className="inline mr-2  lg:size-7 md:size-5" /> More
+          <CiCircleMore className="inline mr-2  lg:size-5 md:size-4" /> More
         </button>
 
         <button
           className="absolute bg-amber-300 p-3 rounded-full flex items-center justify-center bottom-6 "
           onClick={openModal}
         >
-          <BiSolidDish className="inline lg:size-7 md:size-5" />
+          <BiSolidDish className="inline lg:size-5 md:size-4" />
         </button>
 
         <Modal title="Create Order" isOpen={isOpenModal} isClose={closeModal}>

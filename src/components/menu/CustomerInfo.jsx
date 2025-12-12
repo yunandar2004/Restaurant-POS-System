@@ -8,7 +8,7 @@ const CustomerInfo = () => {
           Customer Name
         </h1>
         <p className="text-xs text-[#ababab] font-medium mt-1">#101/Dine in</p>
-        <p className="text-xs text-[#ababab] font-medium mt-2">
+        <p className="text-xs text-[#ababab] font-medium mt-1">
           January 19, 2025 05:34 PM
         </p>
       </div>
